@@ -22,8 +22,7 @@
 
 ## :dart:  Desafio Javascript
 
-- [ ]  Crie uma **função** que irá calcular a média das notas de cada aluno;
-- [ ]  Supondo que a média, para esse concurso é **7**, verifique **se** cada aluno obteve sucesso ou não em entrar no concurso e mostre uma mensagem na tela.
+- [ ]  Crie uma função que irá sortear um número de 0 a 10 e a cada tentativa do usuário essa função verifica se o usuário acertou o número sorteado e finalmente mostra uma mensagem informando o acerto e a quantidade de tentativas;
 
 ## :mailbox_closed: Contatos
 
