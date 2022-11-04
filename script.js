@@ -4,6 +4,7 @@ const btnReset = document.querySelector("#btnReset");
 const screen1 = document.querySelector(".screen1");
 const screen2 = document.querySelector(".screen2");
 const randomNumber = Math.round(Math.random() * 10);
+const error = document.querySelector('.error');
 let xAttempts = 1;
 
 //eventos
@@ -14,7 +15,7 @@ document.addEventListener('keypress', pressEnter);
 //função callback
 function hendleTryClick(event) {
     event.preventDefault();
-
+    error.classList.add('hide')
     const inputNumber = document.querySelector("#inputNumber");
 
     if (Number(inputNumber.value) == randomNumber) {
@@ -46,11 +47,10 @@ function pressEnter(e) {
 }
 
 function attemptInvalid() {
-    
+
     if ((inputNumber.value == "") || (inputNumber.value < 0) || (inputNumber.value != Number(inputNumber.value))) {
         --xAttempts;
-       
-        
+        error.classList.remove('hide');
     }
     return false
 }

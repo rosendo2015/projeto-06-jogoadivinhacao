@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>Jogo Adivinhação</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@600&display=swap"
@@ -22,12 +23,16 @@
                 <input id="inputNumber" type="text" autofocus>
                 <button id="btnTry">Tentar</button>
             </form>
+            <br>
+            
+            <span class="error hide">Válido apenas números.</span>
         </div>
+
         <div class="screen2 hide">
             <h2>Acertou em 3 tentativas!</h2>
             <button id="btnReset">Jogar novamnete</button>
         </div>
-        
+
     </main>
     <script src="script.js"></script>
 </body>
